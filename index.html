@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
         <!-- Шапка сайту -->
-        <header>
+        <header class="header">
             <nav>
-                <a href="/"><span>Web</span><span>Studio</span></a>
+                <a href="/">
+                    <span class="web">Web</span>
+                    <span class="studio">Studio</span>
+                </a>
                 <ul>
                     <!-- Тільки в першій li є посилання, тому що тільки вона позначена як активна в макеті -->
-                    <li><a href="#">Студія</a></li>
-                    <li><a href="https://lizakkhona.github.io/WebStudio_Portfolio/">Портфоліо</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li>
+                        <a href="./index.html">
+                            <span class="linkNavVisit">Студія</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html">
+                            <span class="linkPages">Портфоліо</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="linkPages">Контакти</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <ul>
                <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
+                <a href="mailto:info@devstudio.com">
+                    <span class="email">info@devstudio.com</span>
+                </a>
+               </li>
             <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a href="tel:+380961111111">
+                    <span class="tel">+38 096 111 11 11</span>
+                </a>
             </li>
             </ul>
         </header>
         <!-- Головна частина -->
         <main>
             <!-- Hero section -->
-           <section>
-            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button type="button">Замовити послугу</button>
+           <section class="heroSection">
+            <h1 class="primaryTitle">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button type="button" class="button1">Замовити послугу</button>
            </section>
            <!-- Особливості -->
-           <section>
-            <ul>
+           <section class="colorMainBackground">
+            <ul class="features">
                 <li>
                     <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -55,8 +75,8 @@
             </ul>
            </section>
            <!-- Чим ми займаємося -->
-           <section>
-            <h2>Чим ми займаємося</h2>
+           <section class="colorMainBackground">
+            <h2 class="ourServices">Чим ми займаємося</h2>
             <ul>
             <li><img src="./images/keyboard.jpg" alt="man types on keyboard" width="370" height="294"></li>
             <li><img src="./images/phoneinhand.jpg" alt="man keeps the phone" width="370" height="294"></li>
@@ -64,9 +84,9 @@
             </ul>   
             </section>
            <!-- Наша команда -->
-           <section>
-            <h2>Наша команда</h2>
-            <ul>
+           <section class="ourTeamBackground">
+            <h2 class="ourTeam">Наша команда</h2>
+            <ul class="names">
             <!-- Ігор -->
               <li>
                 <img src="./images2/igor.jpg" alt="Igor Demianenko" width="270" height="260"/>
@@ -95,11 +115,16 @@
            </section>
         </main>
         <!-- Підвал сайту -->
-        <footer>
-            <a href="/">WebStudio</a>
+        <footer class="footer">
+            <a href="/">
+                <span class="web2">Web</span>
+                <span class="studio2">Studio</span>
+            </a>
                 <address>
-                    <ul>
-                        <li>м. Київ, пр-т Лесі Українки, 26</li>
+                    <ul class="ourAddress">
+                        <li>
+                            <span>м. Київ, пр-т Лесі Українки, 26</span>
+                        </li>
                         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>

@@ -1,0 +1,121 @@
+:root {
+    /* Загальні змінні */
+    --logoColorWeb: #2196F3;
+    --logoColorStudio: #000000;
+    --linkNavVisitColor: #2196F3;
+    --linkPagesColor: #212121;
+    --emailColor: #2196F3;
+    --telColor: #757575;
+    --headerBackground: #FFFFFF;
+    --colorMainBackground: #FFFFFF;
+    --footerBackground: #2F303A;
+    --web2Color: #2196F3;
+    --studio2Color: #FFFFFF;
+    --addressKyivColor: #FFFFFF;
+    --addressEmailAndTel: #757575;
+
+    /* Змінні для студіо */
+    --heroSectionBackground: #2F303A;
+    --primaryTitleColor: #FFFFFF;
+    --backgroundButton1: #2196F3;
+    --colorTextButton1: #FFFFFF;
+    --secondaryTitleColor: #212121;
+    --ourFeaturesColorText: #757575;
+    --ourServicesColor: #212121;
+    --ourTeamBackground: #F5F4FA;
+    --ourTeamColor: #212121;
+    --namesPeopleColor: #212121;
+    --professionsColor: #757575;
+
+    /* Змінні для портфоліо */
+    --button2BackgroundColor: #2196F3;
+    --button2TextColor: #FFFFFF;
+    --button3BackgroundColor: #F5F4FA;
+    --button3TextColor: #212121;
+}
+
+
+/* Загальне */
+.web {
+    color: var(--logoColorWeb);
+}
+.studio {
+    color: var(--logoColorStudio);
+}
+.linkNavVisit {
+    color: var(--linkNavVisitColor);
+}
+.linkPages {
+    color: var(--linkPagesColor);
+}
+.email {
+    color: var(--emailColor);
+}
+.tel {
+    color: var(--telColor);
+}
+.header {
+    background-color: var(--headerBackground);
+}
+.colorMainBackground {
+    background-color: var(--colorMainBackground);
+}
+.footer {
+    background-color: var(--footerBackground);
+}
+.web2 {
+    color: var(--web2Color);
+}
+.studio2 {
+    color: var(--studio2Color);
+}
+.ourAddress span {
+    color: var(--addressKyivColor);
+}
+.ourAddress a {
+    color: var(--addressEmailAndTel);
+}
+
+
+/* Сторінка Студіо */
+.heroSection {
+    background-color: var(--heroSectionBackground);
+}
+.primaryTitle {
+    color: var(--primaryTitleColor);
+}
+.button1 {
+    background-color: var(--backgroundButton1); 
+    color: var(--colorTextButton1);
+}
+.features h2 {
+    color: var(--secondaryTitleColor);
+}
+.features p {
+    color: var(--ourFeaturesColorText);
+}
+.ourServices {
+    color: var(--ourServicesColor);
+}
+.ourTeamBackground {
+    background-color: var(--ourTeamBackground);
+}
+.ourTeam {
+    color: var(--ourTeamColor);
+}
+.names h3 {
+    color: var(--namesPeopleColor);
+}
+.names p {
+    color: var(--professionsColor);
+}
+
+/* Сторінка Портфоліо */
+.button2 {
+    background-color: var(--button2BackgroundColor);
+    color: var(--button2TextColor);
+}
+.button3 {
+    background-color: var(--button3BackgroundColor);
+    color: var(--button3TextColor);
+}
