@@ -1,121 +1,94 @@
 :root {
-    /* Загальні змінні */
-    --logoColorWeb: #2196F3;
-    --logoColorStudio: #000000;
-    --linkNavVisitColor: #2196F3;
-    --linkPagesColor: #212121;
-    --emailColor: #2196F3;
-    --telColor: #757575;
-    --headerBackground: #FFFFFF;
-    --colorMainBackground: #FFFFFF;
-    --footerBackground: #2F303A;
-    --web2Color: #2196F3;
-    --studio2Color: #FFFFFF;
-    --addressKyivColor: #FFFFFF;
-    --addressEmailAndTel: #757575;
-
-    /* Змінні для студіо */
-    --heroSectionBackground: #2F303A;
-    --primaryTitleColor: #FFFFFF;
-    --backgroundButton1: #2196F3;
-    --colorTextButton1: #FFFFFF;
-    --secondaryTitleColor: #212121;
-    --ourFeaturesColorText: #757575;
-    --ourServicesColor: #212121;
-    --ourTeamBackground: #F5F4FA;
-    --ourTeamColor: #212121;
-    --namesPeopleColor: #212121;
-    --professionsColor: #757575;
-
-    /* Змінні для портфоліо */
-    --button2BackgroundColor: #2196F3;
-    --button2TextColor: #FFFFFF;
-    --button3BackgroundColor: #F5F4FA;
-    --button3TextColor: #212121;
+    --colorWhite: #FFFFFF;
+    --colorBlue: #2196F3;
+    --colorBlack: #212121;
+    --colorLightGrey: #757575;
+    --colorDarkGrey: #2F303A;
+    --colorDarkWhite: #F5F4FA;
 }
 
 
 /* Загальне */
 .web {
-    color: var(--logoColorWeb);
+    color: var(--colorBlue);
 }
 .studio {
-    color: var(--logoColorStudio);
+    color: var(--colorBlack);
 }
 .linkNavVisit {
-    color: var(--linkNavVisitColor);
+    color: var(--colorBlue);
 }
 .linkPages {
-    color: var(--linkPagesColor);
+    color: var(--colorBlack);
 }
 .email {
-    color: var(--emailColor);
+    color: var(--colorBlue);
 }
 .tel {
-    color: var(--telColor);
+    color: var(--colorLightGrey);
 }
 .header {
-    background-color: var(--headerBackground);
+    background-color: var(--colorWhite);
 }
 .colorMainBackground {
-    background-color: var(--colorMainBackground);
+    background-color: var(--colorWhite);
 }
 .footer {
-    background-color: var(--footerBackground);
+    background-color: var(--colorDarkGrey);
 }
 .web2 {
-    color: var(--web2Color);
+    color: var(--colorBlue);
 }
 .studio2 {
-    color: var(--studio2Color);
+    color: var(--colorWhite);
 }
 .ourAddress span {
-    color: var(--addressKyivColor);
+    color: var(--colorWhite);
 }
 .ourAddress a {
-    color: var(--addressEmailAndTel);
+    color: var(--colorLightGrey);
 }
 
 
 /* Сторінка Студіо */
 .heroSection {
-    background-color: var(--heroSectionBackground);
+    background-color: var(--colorDarkGrey);
 }
 .primaryTitle {
-    color: var(--primaryTitleColor);
+    color: var(--colorWhite);
 }
 .button1 {
-    background-color: var(--backgroundButton1); 
-    color: var(--colorTextButton1);
+    background-color: var(--colorBlue); 
+    color: var(--colorWhite);
 }
 .features h2 {
-    color: var(--secondaryTitleColor);
+    color: var(--colorBlack);
 }
 .features p {
-    color: var(--ourFeaturesColorText);
+    color: var(--colorLightGrey);
 }
 .ourServices {
-    color: var(--ourServicesColor);
+    color: var(--colorBlack);
 }
 .ourTeamBackground {
-    background-color: var(--ourTeamBackground);
+    background-color: var(--colorDarkWhite);
 }
 .ourTeam {
-    color: var(--ourTeamColor);
+    color: var(--colorBlack);
 }
 .names h3 {
-    color: var(--namesPeopleColor);
+    color: var(--colorBlack);
 }
 .names p {
-    color: var(--professionsColor);
+    color: var(--colorLightGrey);
 }
 
 /* Сторінка Портфоліо */
 .button2 {
-    background-color: var(--button2BackgroundColor);
-    color: var(--button2TextColor);
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
 }
 .button3 {
-    background-color: var(--button3BackgroundColor);
-    color: var(--button3TextColor);
+    background-color: var(--colorDarkWhite);
+    color: var(--colorBlack);
 }
