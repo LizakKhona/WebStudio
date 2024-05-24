@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,128 +12,132 @@
 <body>
      <!-- Шапка сайту -->
         <header class="header">
-            <nav>
-                <a href="/">
-                    <span class="web">Web</span>
-                    <span class="studio">Studio</span>
+            <nav class="nav">
+                <a href="/" class="nav-link">
+                    <span class="nav-link-span">Web</span>
+                    <span class="nav-link-span">Studio</span>
                 </a>
-                <ul>
-                    <li>
-                        <a href="./index.html">
-                            <span class="linkPages">Студія</span>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="./index.html" class="nav-list-link">
+                            <span class="nav-list-link">Студія</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="./portfolio.html">
-                            <span class="linkNavVisit">Портфоліо</span>
+                    <li class="nav-list-item">
+                        <a href="./portfolio.html" class="nav-list-link">
+                            <span class="nav-list-link">Портфоліо</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="linkPages">Контакти</span>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">
+                            <span class="nav-list-link">Контакти</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <ul>
-               <li>
-                <a href="mailto:info@devstudio.com">
-                    <span class="email">info@devstudio.com</span>
+            <ul class="header-list">
+               <li class="header-list-item">
+                <a href="mailto:info@devstudio.com" class="header-list-link">
+                    <span class="header-list-link-info">info@devstudio.com</span>
                 </a>
-            </li>
-            <li>
-                <a href="tel:+380961111111">
-                    <span class="tel">+38 096 111 11 11</span>
+               </li>
+               <li class="header-list-item">
+                <a href="tel:+380961111111" class="header-list-link">
+                    <span class="header-list-link-info">+38 096 111 11 11</span>
                 </a>
-            </li>
+               </li>
             </ul>
         </header>
         <!-- Головна частина -->
-        <main>
+        <main class="main">
             <!-- Кнопки -->
-            <section class="colorMainBackground">
-            <ul>
-                <li>
-                    <button type="button" class="button2">Усі</button>
+            <section class="main-buttonSection">
+            <ul class="buttonSection-list">
+                <li class="buttonSection-list-item">
+                    <button type="button" class="list-item-button">Усі</button>
                 </li>
-                <li>
-                    <button type="button" class="button3">Веб-сайти</button>
+                <li class="buttonSection-list-item">
+                    <button type="button" class="list-item-button">Веб-сайти</button>
                 </li>
-                <li>
-                    <button type="button" class="button3">Додатки</button>
+                <li class="buttonSection-list-item">
+                    <button type="button" class="list-item-button">Додатки</button>
                 </li>
-                <li>
-                    <button type="button" class="button3">Дизайн</button>
+                <li class="buttonSection-list-item">
+                    <button type="button" class="list-item-button">Дизайн</button>
                 </li>
-                <li>
-                    <button type="button" class="button3">Маркетинг</button>
+                <li class="buttonSection-list-item">
+                    <button type="button" class="list-item-button">Маркетинг</button>
                 </li>
             </ul>
             </section>
             <!-- Пропозиції -->
-            <section class="colorMainBackground">
-                <ul>
-                    <li>
-                        <img src="./images/images1/images3/page.jpg" alt="photo with open page on laptop" width="370" height="294"/>
-                        <h2>Технокряк</h2>
-                        <p>Веб-сайт</p>
+            <section class="main-colorMainBackground">
+                <ul class="colorMainBackground-offers">
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/page.jpg" alt="photo with open page on laptop" width="370" height="294"/>
+                        <h2 class="offers-item-title">Технокряк</h2>
+                        <p class="offers-item-text">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/basketballers.jpg" alt="2 basketballers plays basketball" width="370" height="294"/>
-                        <h2>Постер New Orlean vs Golden Star</h2>
-                        <p>Дизайн</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/basketballers.jpg" alt="2 basketballers plays basketball" width="370" height="294"/>
+                        <h2 class="offers-item-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="offers-item-text">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/logo.jpg" alt="The logo of restaurant" width="370" height="294"/>
-                        <h2>Ресторан Seafood</h2>
-                        <p>Додаток</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/logo.jpg" alt="The logo of restaurant" width="370" height="294"/>
+                        <h2 class="offers-item-title">Ресторан Seafood</h2>
+                        <p class="offers-item-text">Додаток</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/headphones.jpg" alt="The view of the black headphones" width="370" height="294"/>
-                        <h2>Проєкт Prime</h2>
-                        <p>Маркетинг</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/headphones.jpg" alt="The view of the black headphones" width="370" height="294"/>
+                        <h2 class="offers-item-title">Проєкт Prime</h2>
+                        <p class="offers-item-text">Маркетинг</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/boxes.jpg" alt="The view of two boxes" width="370" height="294"/>
-                        <h2>Проєкт Boxes</h2>
-                        <p>Додаток</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/boxes.jpg" alt="The view of two boxes" width="370" height="294"/>
+                        <h2 class="offers-item-title">Проєкт Boxes</h2>
+                        <p class="offers-item-text">Додаток</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/computer.jpg" alt="The monitor of computer" width="370" height="294"/>
-                        <h2>Inspiration has no Borders</h2>
-                        <p>Веб-сайт</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/computer.jpg" alt="The monitor of computer" width="370" height="294"/>
+                        <h2 class="offers-item-title">Inspiration has no Borders</h2>
+                        <p class="offers-item-text">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/journal.jpg" alt="The journal" width="370" height="294"/>
-                        <h2>Видання Limited Edition</h2>
-                        <p>Дизайн</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/journal.jpg" alt="The journal" width="370" height="294"/>
+                        <h2 class="offers-item-title">Видання Limited Edition</h2>
+                        <p class="offers-item-text">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/label.jpg" alt="The view of white label" width="370" height="294"/>
-                        <h2>Проєкт LAB</h2>
-                        <p>Маркетинг</p>
+                    <li class="offers-item">
+                        <img class="offers-item-img" src="./images/images1/images3/label.jpg" alt="The view of white label" width="370" height="294"/>
+                        <h2 class="offers-item-title">Проєкт LAB</h2>
+                        <p class="offers-item-text">Маркетинг</p>
                     </li>
-                    <li>
-                        <img src="./images/images1/images3/laptop.jpg" alt="The view of laptop" width="370" height="294"/>
-                       <h2>Growing Business</h2>
-                       <p>Додаток</p>
+                    <li class="offers-item">
+                       <img class="offers-item-img" src="./images/images1/images3/laptop.jpg" alt="The view of laptop" width="370" height="294"/>
+                       <h2 class="offers-item-title">Growing Business</h2>
+                       <p class="offers-item-text">Додаток</p>
                     </li>
                 </ul>
             </section>
         </main>
         <!-- Підвал сайту -->
         <footer class="footer">
-            <a href="/">
-                <span class="web2">Web</span>
-                <span class="studio2">Studio</span>
+            <a href="/" class="footer-link">
+                <span class="footer-link-span">Web</span>
+                <span class="footer-link-span">Studio</span>
             </a>
-                <address>
-                    <ul class="ourAddress">
-                        <li>
-                            <span>м. Київ, пр-т Лесі Українки, 26</span>
+                <address class="footer-address">
+                    <ul class="footer-address-list">
+                        <li class="address-list-link">
+                            <span class="list-item-span">м. Київ, пр-т Лесі Українки, 26</span>
                         </li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="address-list-link">
+                            <a href="mailto:info@devstudio.com" class="list-item-link">info@devstudio.com</a>
+                        </li>
+                        <li class="address-list-link">
+                            <a href="tel:+380961111111" class="list-item-link">+38 096 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
         </footer>

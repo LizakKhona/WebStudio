@@ -1,96 +1,189 @@
 :root {
+    /* Кольори */
     --colorWhite: #FFFFFF;
     --colorBlue: #2196F3;
     --colorBlack: #212121;
     --colorLightGrey: #757575;
     --colorDarkGrey: #2F303A;
     --colorDarkWhite: #F5F4FA;
+    /* Шрифти */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
 }
 
 
 /* Загальне */
-.web {
-    color: var(--colorBlue);
+body {
+    font-family: var(--font-family);
 }
-.studio {
+.nav-link-span:first-child {
+    color: var(--colorBlue);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+.nav-link-span:last-child {
     color: var(--colorBlack);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
-.linkNavVisit {
-    color: var(--colorBlue);
-}
-.linkPages {
+.nav-list-link {
     color: var(--colorBlack);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
 }
-.email {
+.nav-list-link:hover,
+.nav-list-link:focus {
     color: var(--colorBlue);
 }
-.tel {
+.header-list-link-info {
     color: var(--colorLightGrey);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+.header-list-link-info:hover,
+.header-list-link-info:focus {
+    color: var(--colorBlue);
 }
 .header {
     background-color: var(--colorWhite);
 }
-.colorMainBackground {
+.main-colorMainBackground {
     background-color: var(--colorWhite);
 }
 .footer {
     background-color: var(--colorDarkGrey);
 }
-.web2 {
+.footer-link-span:first-child {
     color: var(--colorBlue);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
-.studio2 {
+.footer-link-span:last-child {
     color: var(--colorWhite);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
-.ourAddress span {
+.list-item-span {
     color: var(--colorWhite);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.ourAddress a {
+.list-item-link {
     color: var(--colorLightGrey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 
 /* Сторінка Студіо */
-.heroSection {
+.main-heroSection {
     background-color: var(--colorDarkGrey);
 }
-.primaryTitle {
+.heroSection-title {
     color: var(--colorWhite);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
 }
-.button1 {
+.heroSection-button {
     background-color: var(--colorBlue); 
     color: var(--colorWhite);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
-.features h2 {
+.list-item-title {
     color: var(--colorBlack);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
-.features p {
+.list-item-text {
     color: var(--colorLightGrey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
-.ourServices {
+.colorMainBackground-title {
     color: var(--colorBlack);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
-.ourTeamBackground {
+.main-ourTeam {
     background-color: var(--colorDarkWhite);
 }
-.ourTeam {
+.ourTeam-title {
     color: var(--colorBlack);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
-.names h3 {
+.ul-li-title {
     color: var(--colorBlack);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
-.names p {
+.ul-li-text {
     color: var(--colorLightGrey);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 /* Сторінка Портфоліо */
-.button2 {
+.list-item-button {
+    background-color: var(--colorDarkWhite);
+    color: var(--colorBlack);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.list-item-button:hover,
+.list-item-button:focus  {
     background-color: var(--colorBlue);
     color: var(--colorWhite);
 }
-.button3 {
-    background-color: var(--colorDarkWhite);
+.offers-item-title {
     color: var(--colorBlack);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.offers-item-text {
+    color: var(--colorLightGrey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }
