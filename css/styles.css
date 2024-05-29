@@ -159,7 +159,7 @@ body {
 }
 
 /* Сторінка Портфоліо */
-.list-item-button {
+.unorderedList-item-button {
     background-color: var(--colorDarkWhite);
     color: var(--colorBlack);
     font-weight: 500;
@@ -168,8 +168,8 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
 }
-.list-item-button:hover,
-.list-item-button:focus  {
+.unorderedList-item-button:hover,
+.unorderedList-item-button:focus  {
     background-color: var(--colorBlue);
     color: var(--colorWhite);
 }
