@@ -15,86 +15,78 @@
 /* Загальне */
 body {
     font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
-.nav-link-span:first-child {
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.nav-logo {
     color: var(--colorBlue);
     font-family: var(--second-family);
-    font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
 }
-.nav-link-span:last-child {
+.header-logo {
     color: var(--colorBlack);
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
 }
-.nav-list-link {
+.footer-logo {
+    color: var(--colorWhite);
+}
+.nav-list-pages {
     color: var(--colorBlack);
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
 }
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-pages:hover,
+.nav-list-pages:focus {
     color: var(--colorBlue);
 }
-.header-list-link-info {
+.contacts-link-info {
     color: var(--colorLightGrey);
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
 }
-.header-list-link-info:hover,
-.header-list-link-info:focus {
+.contacts-link-info:hover,
+.contacts-link-info:focus {
     color: var(--colorBlue);
 }
 .header {
     background-color: var(--colorWhite);
 }
-.main-colorMainBackground {
+.section {
     background-color: var(--colorWhite);
 }
 .footer {
     background-color: var(--colorDarkGrey);
 }
-.footer-link-span:first-child {
-    color: var(--colorBlue);
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-}
-.footer-link-span:last-child {
+.footer-logo {
     color: var(--colorWhite);
     font-family: var(--second-family);
-    font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
 }
-.list-item-span {
+.address-post {
     color: var(--colorWhite);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.list-item-link {
+.address-email, .address-phone {
     color: var(--colorLightGrey);
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 
 /* Сторінка Студіо */
-.main-heroSection {
+.heroSection {
     background-color: var(--colorDarkGrey);
 }
-.heroSection-title {
+.title {
     color: var(--colorWhite);
     font-weight: 900;
     font-size: 44px;
@@ -106,84 +98,67 @@ body {
 .heroSection-button {
     background-color: var(--colorBlue); 
     color: var(--colorWhite);
-    font-weight: 700;
+    padding: 10px 32px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+    border-radius: 4px;
 }
-.list-item-title {
+.headding {
     color: var(--colorBlack);
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    font-size: 36px;
+    text-align: center;
+}
+.features-title {
+    color: var(--colorBlack);
     text-transform: uppercase;
 }
-.list-item-text {
+.features-text {
     color: var(--colorLightGrey);
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
-.colorMainBackground-title {
-    color: var(--colorBlack);
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.main-ourTeam {
+.team {
     background-color: var(--colorDarkWhite);
 }
-.ourTeam-title {
-    color: var(--colorBlack);
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-.ul-li-title {
+.team-title {
     color: var(--colorBlack);
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.03em;
     text-align: center;
 }
-.ul-li-text {
+.team-text {
     color: var(--colorLightGrey);
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.03em;
     text-align: center;
 }
-
 /* Сторінка Портфоліо */
-.unorderedList-item-button {
+.button {
     background-color: var(--colorDarkWhite);
     color: var(--colorBlack);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: 0.03em;
     text-align: center;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
-.unorderedList-item-button:hover,
-.unorderedList-item-button:focus  {
+.button:hover,
+.button:focus  {
     background-color: var(--colorBlue);
     color: var(--colorWhite);
 }
-.offers-item-title {
+.offers-title {
     color: var(--colorBlack);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.offers-item-text {
+.offers-text {
     color: var(--colorLightGrey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
 }
