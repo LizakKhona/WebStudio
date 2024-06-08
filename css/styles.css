@@ -105,6 +105,11 @@ body {
     text-align: center;
     border-radius: 4px;
 }
+.button-center{
+    display: flex;
+    justify-content: center;
+
+}
 .headding {
     color: var(--colorBlack);
     font-size: 36px;
