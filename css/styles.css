@@ -28,6 +28,8 @@ body {
 }
 .header {
     background-color: var(--colorWhite);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .nav-logo {
     color: var(--colorBlue);
@@ -60,14 +62,26 @@ body {
 }
 .section {
     background-color: var(--colorWhite);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .footer {
     background-color: var(--colorDarkGrey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-link {
+    display: block;
+    margin-bottom: 20px;
 }
 .footer-logo {
     color: var(--colorWhite);
     font-family: var(--second-family);
     font-size: 26px;
+}
+.address-item:nth-child(2) {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 .address-post {
     color: var(--colorWhite);
@@ -85,6 +99,8 @@ body {
 /* Сторінка Студіо */
 .heroSection {
     background-color: var(--colorDarkGrey);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .title {
     color: var(--colorWhite);
@@ -94,6 +110,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 .heroSection-button {
     background-color: var(--colorBlue); 
@@ -104,11 +121,15 @@ body {
     letter-spacing: 0.06em;
     text-align: center;
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 .headding {
     color: var(--colorBlack);
     font-size: 36px;
     text-align: center;
+    margin-bottom: 50px;
 }
 .features-title {
     color: var(--colorBlack);
