@@ -6,6 +6,8 @@
     --colorLightGrey: #757575;
     --colorDarkGrey: #2F303A;
     --colorDarkWhite: #F5F4FA;
+    --colorLightWhite: #ECECEC;
+    --colorOffersBorder: #EEEEEE;
     /* Шрифти */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -30,6 +32,7 @@ body {
     background-color: var(--colorWhite);
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--colorLightWhite);
 }
 .flex {
     display: flex;
@@ -197,6 +200,11 @@ body {
     margin-bottom: 30px;
 }
 /* Сторінка Портфоліо */
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
 .button {
     background-color: var(--colorDarkWhite);
     color: var(--colorBlack);
@@ -212,15 +220,26 @@ body {
     background-color: var(--colorBlue);
     color: var(--colorWhite);
 }
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 50px;
+}
 .offers-title {
     color: var(--colorBlack);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .offers-text {
     color: var(--colorLightGrey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    margin-bottom: 20px;
 }
