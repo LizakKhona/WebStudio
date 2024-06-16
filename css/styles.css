@@ -24,12 +24,26 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px; 
+    padding-right: 15px;
 }
 .header {
     background-color: var(--colorWhite);
     padding-top: 24px;
     padding-bottom: 25px;
+}
+.flex {
+    display: flex;
+    column-gap: 344px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    column-gap: 93px;
+    align-items: center;
+}
+.nav-logotype {
+    display: flex;
 }
 .nav-logo {
     color: var(--colorBlue);
@@ -39,8 +53,9 @@ body {
 .header-logo {
     color: var(--colorBlack);
 }
-.footer-logo {
-    color: var(--colorWhite);
+.nav-list {
+    display: flex;
+    column-gap: 50px;
 }
 .nav-list-pages {
     color: var(--colorBlack);
@@ -50,6 +65,10 @@ body {
 .nav-list-pages:hover,
 .nav-list-pages:focus {
     color: var(--colorBlue);
+}
+.header-contacts {
+    display: flex;
+    column-gap: 50px;
 }
 .contacts-link-info {
     color: var(--colorLightGrey);
@@ -71,8 +90,9 @@ body {
     padding-bottom: 60px;
 }
 .footer-link {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
+    
 }
 .footer-logo {
     color: var(--colorWhite);
@@ -131,29 +151,50 @@ body {
     text-align: center;
     margin-bottom: 50px;
 }
+.features-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: center;
+}
 .features-title {
     color: var(--colorBlack);
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .features-text {
     color: var(--colorLightGrey);
     font-weight: 400;
     line-height: 1.71;
 }
+.services {
+    display: flex;
+    column-gap: 30px;
+}
 .team {
     background-color: var(--colorDarkWhite);
+}
+.team-list {
+    display: flex;
+    column-gap: 30px;
+}
+.team-item {
+    background-color: var(--colorWhite);
 }
 .team-title {
     color: var(--colorBlack);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-text {
     color: var(--colorLightGrey);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 30px;
 }
 /* Сторінка Портфоліо */
 .button {
