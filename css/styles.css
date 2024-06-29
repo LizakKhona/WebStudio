@@ -228,6 +228,9 @@ body {
     row-gap: 30px;
     margin-top: 50px;
 }
+.offers-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+}
 .offers-title {
     color: var(--colorBlack);
     font-size: 18px;
