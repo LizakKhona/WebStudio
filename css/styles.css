@@ -28,6 +28,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .header {
     background-color: var(--colorWhite);
     padding-top: 24px;
@@ -262,10 +267,16 @@ body {
 }
 .offers-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
+    border: 1px solid var(--colorOffersBorder);
+}
+.offers-item:hover {
     box-shadow:
     1px 4px 6px 0 rgba(0, 0, 0, 0.16),
     0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+.information {
+    padding: 0 24px;
 }
 .offers-title {
     color: var(--colorBlack);
