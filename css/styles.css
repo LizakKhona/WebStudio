@@ -1,13 +1,16 @@
 :root {
     /* Кольори */
-    --colorWhite: #FFFFFF;
-    --colorBlue: #2196F3;
-    --colorBlack: #212121;
-    --colorLightGrey: #757575;
-    --colorDarkGrey: #2F303A;
-    --colorDarkWhite: #F5F4FA;
-    --colorLightWhite: #ECECEC;
-    --colorOffersBorder: #EEEEEE;
+    
+    --backgroundColor: #FFFFFF;
+    --primaryTextColor: #212121;
+    --secondaryTextColor: #757575;
+    --thirdTextColor: #2196F3;
+    --fourthTextColor: #FFFFFF;
+    --bgHoverButtons: #2196F3;
+    --bgHeroSection: #2F303A;
+    --bgFooter: #2F303A;
+    --bgTeamAndButtons: #F5F4FA;
+    --headerBorder: #ECECEC;
     /* Шрифти */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -34,10 +37,10 @@ img {
     height: 100%;
 }
 .header {
-    background-color: var(--colorWhite);
+    background-color: var(--backgroundColor);
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid var(--colorLightWhite);
+    border-bottom: 1px solid var(--headerBorder);
 }
 .flex {
     display: flex;
@@ -54,46 +57,46 @@ img {
     display: flex;
 }
 .nav-logo {
-    color: var(--colorBlue);
+    color: var(--thirdTextColor);
     font-family: var(--second-family);
     font-size: 26px;
 }
 .header-logo {
-    color: var(--colorBlack);
+    color: var(--primaryTextColor);
 }
 .nav-list {
     display: flex;
     column-gap: 50px;
 }
-.nav-list-pages {
-    color: var(--colorBlack);
+.nav-list-link {
+    color: var(--primaryTextColor);
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-.nav-list-pages:hover,
-.nav-list-pages:focus {
-    color: var(--colorBlue);
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: var(--thirdTextColor);
 }
 .header-contacts {
     display: flex;
     column-gap: 50px;
 }
 .contacts-link-info {
-    color: var(--colorLightGrey);
+    color: var(--secondaryTextColor);
     font-weight: 500;
     letter-spacing: 0.02em;
 }
 .contacts-link-info:hover,
 .contacts-link-info:focus {
-    color: var(--colorBlue);
+    color: var(--thirdTextColor);
 }
 .section {
-    background-color: var(--colorWhite);
+    background-color: var(--backgroundColor);
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .footer {
-    background-color: var(--colorDarkGrey);
+    background-color: var(--bgFooter);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -103,22 +106,25 @@ img {
     
 }
 .footer-logo {
-    color: var(--colorWhite);
+    color: var(--fourthTextColor);
     font-family: var(--second-family);
     font-size: 26px;
+}
+.address {
+    font-style: normal;
 }
 .address-item:nth-child(2) {
     margin-top: 9px;
     margin-bottom: 9px;
 }
 .address-post {
-    color: var(--colorWhite);
+    color: var(--fourthTextColor);
     font-weight: 400;
     line-height: 1.71;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .address-email, .address-phone {
-    color: var(--colorLightGrey);
+    color: var(--secondaryTextColor);
     font-weight: 400;
     line-height: 1.71;
 }
@@ -126,12 +132,16 @@ img {
 
 /* Сторінка Студіо */
 .heroSection {
-    background-color: var(--colorDarkGrey);
+    background-color: var(--bgHeroSection);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url("../images/heroSection/overlay.png"), url(../images/heroSection/people.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .title {
-    color: var(--colorWhite);
+    color: var(--fourthTextColor);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -141,8 +151,8 @@ img {
     margin-bottom: 30px;
 }
 .heroSection-button {
-    background-color: var(--colorBlue); 
-    color: var(--colorWhite);
+    background-color: var(--bgHoverButtons); 
+    color: var(--fourthTextColor);
     padding: 10px 32px;
     font-size: 16px;
     line-height: 1.87;
@@ -182,17 +192,17 @@ img {
     background-image: url(../images/advantages/astronaut.jpg);
 }
 .features-title {
-    color: var(--colorBlack);
+    color: var(--primaryTextColor);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 .features-text {
-    color: var(--colorLightGrey);
+    color: var(--secondaryTextColor);
     font-weight: 400;
     line-height: 1.71;
 }
 .headding {
-    color: var(--colorBlack);
+    color: var(--primaryTextColor);
     font-size: 36px;
     text-align: center;
     margin-bottom: 50px;
@@ -202,14 +212,14 @@ img {
     column-gap: 30px;
 }
 .team {
-    background-color: var(--colorDarkWhite);
+    background-color: var(--bgTeamAndButtons);
 }
 .team-list {
     display: flex;
     column-gap: 30px;
 }
 .team-item {
-    background-color: var(--colorWhite);
+    background-color: var(--backgroundColor);
     box-shadow: 
     0 2px 1px 0 rgba(0, 0, 0, 0.2),
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -217,7 +227,7 @@ img {
     border-radius: 0 0 4px 4px;
 }
 .team-title {
-    color: var(--colorBlack);
+    color: var(--primaryTextColor);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -225,12 +235,14 @@ img {
     margin-bottom: 10px;
 }
 .team-text {
-    color: var(--colorLightGrey);
+    color: var(--secondaryTextColor);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
     margin-bottom: 30px;
 }
+
+
 /* Сторінка Портфоліо */
 .buttons-list {
     display: flex;
@@ -238,8 +250,8 @@ img {
     column-gap: 8px;
 }
 .button {
-    background-color: var(--colorDarkWhite);
-    color: var(--colorBlack);
+    background-color: var(--bgTeamAndButtons);
+    color: var(--primaryTextColor);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -250,8 +262,8 @@ img {
 }
 .button:hover,
 .button:focus  {
-    background-color: var(--colorBlue);
-    color: var(--colorWhite);
+    background-color: var(--bgHoverButtons);
+    color: var(--fourthTextColor);
     box-shadow: 
     0 2px 2px 0 rgba(0, 0, 0, 0.12),
     0 1px 2px 0 rgba(0, 0, 0, 0.08),
@@ -267,7 +279,6 @@ img {
 }
 .offers-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
-    border: 1px solid var(--colorOffersBorder);
 }
 .offers-item:hover {
     box-shadow:
@@ -279,7 +290,7 @@ img {
     padding: 0 24px;
 }
 .offers-title {
-    color: var(--colorBlack);
+    color: var(--primaryTextColor);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -287,7 +298,7 @@ img {
     margin-bottom: 4px;
 }
 .offers-text {
-    color: var(--colorLightGrey);
+    color: var(--secondaryTextColor);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
