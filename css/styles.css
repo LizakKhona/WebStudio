@@ -11,6 +11,7 @@
     --bgFooter: #2F303A;
     --bgTeamAndButtons: #F5F4FA;
     --headerBorder: #ECECEC;
+    --cardsBorder: #EEEEEE;
     /* Шрифти */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -287,14 +288,16 @@ img {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .information {
-    padding: 0 24px;
+    padding: 20px 24px;
+    border-right: 1px solid var(--cardsBorder);
+    border-bottom: 1px solid var(--cardsBorder);
+    border-left: 1px solid var(--cardsBorder);
 }
 .offers-title {
     color: var(--primaryTextColor);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .offers-text {
@@ -302,5 +305,4 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    margin-bottom: 20px;
 }
