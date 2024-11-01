@@ -11,6 +11,7 @@
     --bgHeroSection: #2F303A;
     --bgFooter: #2F303A;
     --bgTeamAndButtons: #F5F4FA;
+    --bgTitleColor: #2f303acd;
     --headerBorder: #ECECEC;
     --cardsBorder: #EEEEEE;
     --primaryIconsColor: #757575;
@@ -251,6 +252,20 @@ img {
 .services {
     display: flex;
     column-gap: 30px;
+}
+.services-item {
+    position: relative;
+}
+.services-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px;
+    background-color: var(--bgTitleColor);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--fourthTextColor);
 }
 .team {
     background-color: var(--bgTeamAndButtons);
