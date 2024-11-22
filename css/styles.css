@@ -27,6 +27,8 @@
     --bgFormButton: #188CE8;
     --borderInputColor: #2196F3;
     --borderInputEmail: #ffffff4d;
+    --underlinePagesColor: #2196F3;
+    --overlayBg: #2195f3e6;
     /* Шрифти */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
@@ -238,6 +240,19 @@ img {
 
 
 /* Сторінка Студіо */
+#underline-studio {
+    position: relative;
+}
+#underline-studio::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--underlinePagesColor);
+    border-radius: 2px;
+}
 .heroSection {
     background-color: var(--bgHeroSection);
     padding-top: 200px;
@@ -526,6 +541,19 @@ img {
 }
 
 /* Сторінка Портфоліо */
+#underline-portfolio {
+    position: relative;
+}
+#underline-portfolio::after {
+    content: "";
+    position: absolute;
+    top: 46px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--underlinePagesColor);
+    border-radius: 2px;
+}
 .buttons-list {
     display: flex;
     justify-content: center;
@@ -556,17 +584,36 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 32px;
     margin-top: 50px;
 }
 .offers-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
+    cursor: pointer;
 }
 .offers-item:hover {
     box-shadow:
     1px 4px 6px 0 rgba(0, 0, 0, 0.16),
     0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+.thumb {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+.offers-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 63px 24px;
+    background-color: var(--overlayBg);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--fourthTextColor);
 }
 .information {
     padding: 20px 24px;
