@@ -92,6 +92,10 @@ img {
     color: var(--primaryTextColor);
     font-weight: 500;
     letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
@@ -109,15 +113,16 @@ img {
     align-items: center;
     column-gap: 10px;
     fill: var(--primaryIconsColor);
-}
-.contacts-link:hover {
-    color: var(--secondaryIconsColor);
-    fill: var(--secondaryIconsColor);
     cursor: pointer;
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--thirdTextColor);
+    fill: var(--secondaryIconsColor);
 }
 .section {
     width: 1600px;
@@ -184,6 +189,8 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-bgc:hover {
     background-color: var(--secondaryIconsColor);
@@ -241,7 +248,7 @@ img {
 
 /* Сторінка Студіо */
 #underline-studio {
-    position: relative;
+    position: relative;    
 }
 #underline-studio::after {
     content: "";
@@ -252,6 +259,12 @@ img {
     height: 4px;
     background-color: var(--underlinePagesColor);
     border-radius: 2px;
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#underline-studio:hover::after {
+    opacity: 1;
 }
 .heroSection {
     background-color: var(--bgHeroSection);
@@ -326,6 +339,8 @@ img {
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid var(--borderButtonColor);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover {
     fill: var(--bgHoverButtons);
@@ -350,6 +365,8 @@ img {
 }
 .input-wrapper {
     position: relative;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-svg {
     position: absolute;
@@ -362,6 +379,8 @@ img {
     padding-left: 42px;
     border-radius: 4px;
     border: 1px solid var(--inputBorderColor);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:hover {
     border: 1px solid var(--borderInputColor);
@@ -380,6 +399,8 @@ img {
     border-radius: 4px;
     border: 1px solid var(--inputBorderColor);
     resize: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea:hover {
     border: 1px solid var(--borderInputColor);
@@ -491,6 +512,10 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0 0 4px 4px;
 }
+.team-img {
+    width: 270px;
+    height: 260px;
+}
 .team-title {
     color: var(--primaryTextColor);
     font-weight: 500;
@@ -515,7 +540,7 @@ img {
     background-color: var(--thirdIconsColor);
 }
 .media-svg {
-   fill: var(--fourthIconsColor);
+    fill: var(--fourthIconsColor);
 }
 .media-link:hover .media-svg {
     fill: var(--thirdIconsColor);
@@ -534,6 +559,8 @@ img {
     border: 1px solid var(--fourthIconsColor);
     border-radius: 4px;
     fill: var(--fourthIconsColor);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .partners-svg:hover {
     border: 1px solid var(--secondaryIconsColor);
@@ -553,6 +580,12 @@ img {
     height: 4px;
     background-color: var(--underlinePagesColor);
     border-radius: 2px;
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#underline-portfolio:hover::after  {
+    opacity: 1;
 }
 .buttons-list {
     display: flex;
@@ -569,6 +602,8 @@ img {
     border-radius: 4px;
     padding: 6px 22px;
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus  {
@@ -590,6 +625,8 @@ img {
 .offers-item {
     flex-basis: calc((100% - 2 * 30px) / 3);
     cursor: pointer;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .offers-item:hover {
     box-shadow:
