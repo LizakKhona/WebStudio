@@ -8,6 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -158,15 +163,18 @@
             <div class="container">
             <h2 class="headding">Чим ми займаємося</h2>
             <ul class="services">
-            <li class="services-item">
+            <li class="services-item" data-aos="fade-up"
+     data-aos-duration="1000">
                 <img class="services-img" src="./images/offers/keyboard.jpg" alt="man types on keyboard" width="370" height="294">
                 <h3 class="services-title">Десктопні додатки</h3>
             </li>
-            <li class="services-item">
+            <li class="services-item" data-aos="fade-up"
+     data-aos-duration="1000">
                 <img class="services-img" src="./images/offers/phoneinhand.jpg" alt="man keeps the phone" width="370" height="294">
                 <h3 class="services-title">Мобільні додатки</h3>
             </li>
-            <li class="services-item">
+            <li class="services-item" data-aos="fade-up"
+     data-aos-duration="1000">
                 <img class="services-img" src="./images/offers/tablet.jpg" alt="man keeps the tablet and works" width="370" height="294">
                 <h3 class="services-title">Дизайнерські рішення</h3>
             </li>
@@ -452,5 +460,9 @@
                 </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+  AOS.init();
+</script>
 </body>
 </html>
